@@ -1,0 +1,270 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A4B41E8-2232-470D-B712-DE9864A9B19B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DllFinance</RootNamespace>
+    <AssemblyName>DllFinance</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.1" />
+    <Reference Include="DevExpress.Charts.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1" />
+    <Reference Include="DevExpress.Data.v21.1" />
+    <Reference Include="DevExpress.DataAccess.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.1.UI, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Diagram.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Mvvm.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.1" />
+    <Reference Include="DevExpress.Utils.v21.1.UI, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.1" />
+    <Reference Include="DevExpress.Sparkline.v21.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v21.1.UI, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.1.Wizard, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v21.1" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm.Designer.cs">
+      <DependentUpon>ChildForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\AlisSatisKarsilastirma.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\AlisSatisKarsilastirma.Designer.cs">
+      <DependentUpon>AlisSatisKarsilastirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\Alis\AlisCariRapor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\Alis\AlisCariRapor.Designer.cs">
+      <DependentUpon>AlisCariRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\Alis\AlisFaturaDetaylari.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\Alis\AlisFaturaDetaylari.Designer.cs">
+      <DependentUpon>AlisFaturaDetaylari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\Alis\AlisUrunRaporu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\Alis\AlisUrunRaporu.Designer.cs">
+      <DependentUpon>AlisUrunRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\Satis\SatisCariRapor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\Satis\SatisCariRapor.Designer.cs">
+      <DependentUpon>SatisCariRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\Satis\SatisFaturaDetaylari.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\Satis\SatisFaturaDetaylari.Designer.cs">
+      <DependentUpon>SatisFaturaDetaylari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\Satis\SatisUrunRaporu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FaturaYonetimi\Satis\SatisUrunRaporu.Designer.cs">
+      <DependentUpon>SatisUrunRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FinansOdeme\BankaKredileri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FinansOdeme\BankaKredileri.Designer.cs">
+      <DependentUpon>BankaKredileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FinansOdeme\BankaOdemeTahsilat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FinansOdeme\BankaOdemeTahsilat.Designer.cs">
+      <DependentUpon>BankaOdemeTahsilat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FinansOdeme\CekVeSenet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FinansOdeme\CekVeSenet.Designer.cs">
+      <DependentUpon>CekVeSenet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FinansOdeme\KasaOdemeTahsilat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FinansOdeme\KasaOdemeTahsilat.Designer.cs">
+      <DependentUpon>KasaOdemeTahsilat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FinansOdeme\KrediKartlari.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FinansOdeme\KrediKartlari.Designer.cs">
+      <DependentUpon>KrediKartlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\FinansOdeme\Leasing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\FinansOdeme\Leasing.Designer.cs">
+      <DependentUpon>Leasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\Ozet\OzetAlisSatis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\Ozet\OzetAlisSatis.Designer.cs">
+      <DependentUpon>OzetAlisSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\Ozet\OzetDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\Ozet\OzetDashboard.Designer.cs">
+      <DependentUpon>OzetDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\Ozet\OzetKapasite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\Ozet\OzetKapasite.Designer.cs">
+      <DependentUpon>OzetKapasite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\Ozet\OzetNakitAkis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\Ozet\OzetNakitAkis.Designer.cs">
+      <DependentUpon>OzetNakitAkis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLLFinance\VeriDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLLFinance\VeriDetay.Designer.cs">
+      <DependentUpon>VeriDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainViewModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL\DataHelper.cs" />
+    <Compile Include="SQL\SqlHelper.cs" />
+    <EmbeddedResource Include="ChildForm.resx">
+      <DependentUpon>ChildForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLLFinance\FaturaYonetimi\Alis\AlisCariRapor.resx">
+      <DependentUpon>AlisCariRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLLFinance\FaturaYonetimi\Alis\AlisFaturaDetaylari.resx">
+      <DependentUpon>AlisFaturaDetaylari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLLFinance\FaturaYonetimi\Alis\AlisUrunRaporu.resx">
+      <DependentUpon>AlisUrunRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLLFinance\FinansOdeme\BankaKredileri.resx">
+      <DependentUpon>BankaKredileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLLFinance\FinansOdeme\Leasing.resx">
+      <DependentUpon>Leasing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLLFinance\Ozet\OzetAlisSatis.resx">
+      <DependentUpon>OzetAlisSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLLFinance\Ozet\OzetDashboard.resx">
+      <DependentUpon>OzetDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLLFinance\Ozet\OzetNakitAkis.resx">
+      <DependentUpon>OzetNakitAkis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLLFinance\VeriDetay.resx">
+      <DependentUpon>VeriDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLLFinance\Kapasite\" />
+    <Folder Include="DLLFinance\PeriyodikGelirGider\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
